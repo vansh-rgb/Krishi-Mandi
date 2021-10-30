@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Krishi Mandi</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="submit">Submit</string>
+    <string name="check">Check</string>
+    <string name="submitMsg">Submitted</string>
+    <string name="EmailValidity">Enter Valid Email</string>
+    <string name="FieldsCheck">Fill all the Fields</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="activity">Activity 2</string>
+    <string name="market">Market:</string>
+    <string name="state">State:</string>
+    <string name="district">District:</string>
+    <string name="id">ID</string>
+    <string name="districtid">DistrictID</string>
+    <string name="fetch">Fetch</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="53dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="48dp"
+            android:hint="@string/enter_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInput"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:hint="@string/enter_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+        <TextView
+            android:id="@+id/statusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="@string/check"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/storedImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusTV"
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+        <TextView
+            android:id="@+id/storedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/name"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/storedImage"
+            app:layout_constraintTop_toBottomOf="@+id/statusTV" />
+        <TextView
+            android:id="@+id/storedEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/email"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/storedImage"
+            app:layout_constraintTop_toBottomOf="@+id/storedName" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/activity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/storedEmail" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</ScrollView>
